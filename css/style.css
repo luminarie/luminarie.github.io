@@ -201,7 +201,7 @@ h6 {
 
 #main h3 {
     font:
-        bold italic 1.25em/1.5em baskerville-display-pt,
+        bold italic 22px/32px baskerville-display-pt,
         serif;
     margin-top: 48px;
     margin-bottom: 32px;
@@ -255,9 +255,9 @@ hr {
 }
 
 #main #previously em {
-    font-style: normal;
-    font-size: 14px;
-    font-family: brandon-grotesque, sans-serif;
+    font:
+        14px/24px brandon-grotesque,
+        sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
