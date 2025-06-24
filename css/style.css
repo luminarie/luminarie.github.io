@@ -2,157 +2,209 @@
     Reset
 ----------------------------------------------------------------------*/
 
-html, body, div, span,
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, img,
-a, b, abbr, acronym, big, cite, code, del, em, i, ins, small, strike, strong, sub, sup, u,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	background: transparent;
-	font-size: 100%;
-	vertical-align: baseline;
-	padding: 0;
-	outline: 0;
-	border: 0;
-	margin: 0;
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+img,
+a,
+b,
+abbr,
+acronym,
+big,
+cite,
+code,
+del,
+em,
+i,
+ins,
+small,
+strike,
+strong,
+sub,
+sup,
+u,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    background: transparent;
+    font-size: 100%;
+    vertical-align: baseline;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    margin: 0;
 }
-
 
 /*----------------------------------------------------------------------
     Base
 ----------------------------------------------------------------------*/
 
 body {
-	color: #424242;
-	font: 1em/1.5em baskerville-display-pt, serif;
+    color: #424242;
+    font:
+        1em/1.5em cormorant-garamond,
+        serif;
 }
 
 a {
-	color: #424242;
-	text-decoration: none;
-	outline: none;
+    color: #424242;
+    text-decoration: none;
+    outline: none;
 }
-
 
 /*----------------------------------------------------------------------
     Layout
 ----------------------------------------------------------------------*/
 
 body {
-	background-color: #fff;
-	text-align: center;
-	border-top: 8px solid rgba(233, 234, 236, 1);
+    background-color: #fff;
+    text-align: center;
+    border-top: 8px solid rgba(233, 234, 236, 1);
 }
 
 #container {
-	max-width: 720px;
-	text-align: left;
-	padding: 56px 24px;
-	margin: 0 auto;
+    max-width: 720px;
+    text-align: left;
+    padding: 56px 24px;
+    margin: 0 auto;
 }
 
 #container-inner {
-	display: flex;
+    display: flex;
 }
 
 #header {
-	margin-right: 40px;
+    margin-right: 40px;
 }
 
-	#header h1 {
-	}
+#header h1 {
+}
 
-		#header h1 a {
-			opacity: .4;
-			display: block;
-			width: 96px;
-			height: 96px;
-			background: transparent url("../images/ar.svg") no-repeat left top;
-			background-size: 100% auto;
-			text-indent: -5000px;
-		}
+#header h1 a {
+    opacity: 0.4;
+    display: block;
+    width: 96px;
+    height: 96px;
+    background: transparent url("../images/ar.svg") no-repeat left top;
+    background-size: 100% auto;
+    text-indent: -5000px;
+}
 
-		#header h1 a:hover {
-			opacity: .7;
-		}
+#header h1 a:hover {
+    opacity: 0.7;
+}
 
-		#header .description {
-			display: none;
-		}
+#header .description {
+    display: none;
+}
 
 #content {
-	padding-top: 12px;
-	padding-bottom: 64px;
+    padding-top: 8px;
+    padding-bottom: 64px;
 }
 
-	#main {
-	}
+#main {
+}
 
 #footer {
-	display: flex;
-	align-items: center;
-	color: #aaa;
-	font-style: italic;
-	font-size: 13px;
-	line-height: 16px;
-	letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    color: #aaa;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 2px;
 }
 
-	#footer a {
-		color: #aaa;
-	}
+#footer a {
+    color: #aaa;
+}
 
-	#footer img {
-		width: 96px;
-		height: 96px;
-		border-radius: 50%;
-		margin-right: 16px;
-	}
-
+#footer img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
 
 /*----------------------------------------------------------------------
     Generic text styles
 ----------------------------------------------------------------------*/
 
 #main {
-	font-size: 20px;
-	line-height: 32px;
+    font-size: 20px;
+    line-height: 32px;
 }
 
 #main a {
-	background-color: rgba(233, 234, 236, .6);
+    background-color: rgba(233, 234, 236, 0.6);
 }
 
 #main a:hover {
-	background-color: rgba(233, 234, 236, 1);
+    background-color: rgba(233, 234, 236, 1);
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
 }
 
 #main h1 {
-	font-size: 32px;
-	line-height: 40px;
-	margin-bottom: 24px;
+    font:
+        italic 2em/2.25em baskerville-display-pt,
+        serif;
+    margin-bottom: 24px;
 }
 
-	#main h1 a {
-		background: transparent;
-	}
+#main h1 a {
+    background: transparent;
+}
 
 #main h2 {
-	font-size: 28px;
-	line-height: 40px;
-	margin-top: 40px;
-	margin-bottom: 16px;
+    font:
+        1em/1.5em brandon-grotesque,
+        sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 32px;
 }
 
 #main h3 {
-	font-weight: bold;
-	margin-top: 32px;
-	margin-bottom: 16px;
+    font:
+        bold italic 1.25em/1.5em baskerville-display-pt,
+        serif;
+    margin-top: 48px;
+    margin-bottom: 32px;
 }
 
 #main p,
@@ -161,86 +213,96 @@ h1, h2, h3, h4, h5, h6 {
 #main ol,
 #main dd,
 #main table {
-	margin-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 #main ul,
 #main ol {
-	margin-left: 40px;
+    margin-left: 40px;
 }
 
 #main li {
-	margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 #main blockquote {
-	color: #616161;
-	font-style: italic;
-	padding-left: 24px;
-	border-left: 4px solid rgba(237, 232, 227, 1);
+    color: #616161;
+    font-style: italic;
+    padding-left: 24px;
+    border-left: 4px solid rgba(237, 232, 227, 1);
 }
 
 #main sup {
-	font-size: 12px;
-	line-height: 12px;
-	vertical-align: super;
+    font-size: 12px;
+    line-height: 12px;
+    vertical-align: super;
 }
 
 hr {
-	color: transparent;
-	border: none;
-	background-color: rgba(233, 234, 236, 1);
-	height: 2px;
-	margin: 40px 0;
+    color: transparent;
+    border: none;
+    background-color: rgba(233, 234, 236, 1);
+    height: 2px;
+    margin: 48px 0;
 }
-
 
 /*----------------------------------------------------------------------
     Specifics
 ----------------------------------------------------------------------*/
 
-#main ul.posts {
-	list-style: none;
-	padding: 64px 0;
-	border: 2px solid rgba(237, 232, 227, 1);
-	border-width: 2px 0;
-	margin-left: 0;
-	margin-top: 64px;
+.home #main h2 {
+    margin-bottom: 16px;
 }
 
-	#main ul.posts li {
-		margin-bottom: 20px;
-	}
+#main #previously em {
+    font-style: normal;
+    font-size: 14px;
+    font-family: brandon-grotesque, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
-	#main ul.posts li:last-child {
-		margin-bottom: 0;
-	}
+#main ul.posts {
+    list-style: none;
+    padding: 64px 0;
+    border: 2px solid rgba(237, 232, 227, 1);
+    border-width: 2px 0;
+    margin-left: 0;
+    margin-top: 64px;
+}
+
+#main ul.posts li {
+    margin-bottom: 20px;
+}
+
+#main ul.posts li:last-child {
+    margin-bottom: 0;
+}
 
 #main ul.posts .post-date {
-	color: #aaa;
-	font-size: 14px;
-	font-style: italic;
-	line-height: 16px;
-	letter-spacing: 2px;
+    color: #aaa;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+    letter-spacing: 2px;
 }
 
 #main h1.post {
-	margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 #main p.timestamp {
-	color: #aaa;
-	font-style: italic;
-	font-size: 16px;
-	line-height: 20px;
-	letter-spacing: 2px;
-	margin-bottom: 32px;
+    color: #aaa;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 32px;
 }
 
 #main .details {
-	display: none;
+    display: none;
 }
-
 
 /*----------------------------------------------------------------------
     Images
@@ -249,69 +311,65 @@ hr {
 .wp-caption {
 }
 
-	.wp-caption img {
-	}
+.wp-caption img {
+}
 
-	.wp-caption img p.wp-caption-text {
-		font-style: italic;
-		font-size: .9em;
-	}
+.wp-caption img p.wp-caption-text {
+    font-style: italic;
+    font-size: 0.9em;
+}
 
 .aligncenter {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .alignleft {
-	float: left;
-	margin: 0 2em 1em 0;
+    float: left;
+    margin: 0 2em 1em 0;
 }
 
 .alignright {
-	float: right;
-	margin: 0 0 1em 2em;
+    float: right;
+    margin: 0 0 1em 2em;
 }
 
 #main img {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
 }
-
 
 /*----------------------------------------------------------------------
     Comments
 ----------------------------------------------------------------------*/
 
 #comments {
-	display: none;
+    display: none;
 }
-
 
 /*----------------------------------------------------------------------
     Responsive
 ----------------------------------------------------------------------*/
 
 @media screen and (max-width: 600px) {
+    #container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 
-	#container {
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
+    #container-inner {
+        display: block;
+    }
 
-	#container-inner {
-		display: block;
-	}
+    #header {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
 
-	#header {
-		margin-right: 0;
-		margin-bottom: 40px;
-	}
-
-	#header h1 a {
-		margin: 0 auto;
-	}
-
+    #header h1 a {
+        margin: 0 auto;
+    }
 }
 
 /*----------------------------------------------------------------------
@@ -319,32 +377,30 @@ hr {
 ----------------------------------------------------------------------*/
 
 @media (prefers-color-scheme: dark) {
+    body,
+    #main blockquote,
+    #main ul.posts {
+        border-color: #424242;
+    }
 
-	body,
-	#main blockquote,
-	#main ul.posts {
-		border-color: #424242;
-	}
+    body,
+    #main a {
+        color: #ddd;
+    }
 
-	body,
-	#main a {
-		color: #ddd;
-	}
+    body {
+        background-color: #212121;
+    }
 
-	body {
-    	background-color: #212121;
-	}
+    #main a {
+        background-color: #424242;
+    }
 
-	#main a {
-		background-color: #424242;
-	}
+    #main a:hover {
+        background-color: #616161;
+    }
 
-	#main a:hover {
-		background-color: #616161;
-	}
-
-	#main blockquote {
-		color: #bbb;
-	}
-
+    #main blockquote {
+        color: #bbb;
+    }
 }
