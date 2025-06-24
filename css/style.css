@@ -82,9 +82,13 @@ a {
 ----------------------------------------------------------------------*/
 
 body {
-    background: #fff;
+    background-color: rgba(233, 234, 236, 1);
     text-align: center;
-    border-top: 8px solid rgba(233, 234, 236, 1);
+    padding-top: 8px;
+}
+
+#container-outer {
+    background-color: #fff;
 }
 
 #container {
@@ -385,7 +389,6 @@ hr {
 ----------------------------------------------------------------------*/
 
 @media (prefers-color-scheme: dark) {
-    body,
     #main blockquote,
     #main ul.posts,
     #main .portfolio-sample {
@@ -398,6 +401,10 @@ hr {
     }
 
     body {
+        background-color: #424242;
+    }
+
+    #container-outer {
         background-color: #212121;
     }
 
