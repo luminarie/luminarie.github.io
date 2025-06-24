@@ -82,9 +82,13 @@ a {
 ----------------------------------------------------------------------*/
 
 body {
-    background-color: #fff;
+    background-color: rgba(233, 234, 236, 1);
     text-align: center;
-    border-top: 8px solid rgba(233, 234, 236, 1);
+    padding-top: 8px;
+}
+
+#container-outer {
+    background-color: #fff;
 }
 
 #container {
@@ -304,6 +308,14 @@ hr {
     display: none;
 }
 
+#main .portfolio-sample {
+    border: 12px solid rgba(233, 234, 236, 1);
+}
+
+#main .portfolio-sample img {
+    display: block;
+}
+
 /*----------------------------------------------------------------------
     Images
 ----------------------------------------------------------------------*/
@@ -377,9 +389,9 @@ hr {
 ----------------------------------------------------------------------*/
 
 @media (prefers-color-scheme: dark) {
-    body,
     #main blockquote,
-    #main ul.posts {
+    #main ul.posts,
+    #main .portfolio-sample {
         border-color: #424242;
     }
 
@@ -389,10 +401,15 @@ hr {
     }
 
     body {
+        background-color: #424242;
+    }
+
+    #container-outer {
         background-color: #212121;
     }
 
-    #main a {
+    #main a,
+    hr {
         background-color: #424242;
     }
 
